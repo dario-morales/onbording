@@ -1,0 +1,27 @@
+@mixin breakpoint($size) {
+  @if $size == $sizeMobileSmall {
+    @media (min-width: $sizeMobileSmall) {
+      @content;
+    }
+  } @else if $size == $sizeMobileMid {
+    @media (min-width: $sizeMobileMid) {
+      @content;
+    }
+  } @else if $size == $sizeMobileBig {
+    @media (min-width: $sizeMobileBig) {
+      @content;
+    }
+  }@else if $size == $sizeTablet {
+    @media (min-width: $sizeTablet) {
+      @content;
+    }
+  }@else if $size == $sizeDesktopSmall {
+    @media (min-width: $sizeDesktopSmall) {
+      @content;
+    }
+  }@else if $size == $sizeDesktopBig {
+    @media (min-width: $sizeDesktopBig) {
+      @content;
+    }
+  }
+}
